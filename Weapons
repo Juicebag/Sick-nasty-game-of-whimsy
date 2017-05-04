@@ -1,0 +1,17 @@
+class Weapon(Object):
+    def __init__(self, name, description , damage, strreq, dexreq, strbonus, dexbonus):
+        self.damage = damage
+        self.bonus
+        self.strreq = strreq
+        self.dexreq = dexreq
+        super().__init__(name, description)
+ 
+    def __str__(self):
+        return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.strreq, self.damage)
+class Dagger(Weapon):
+  def __init__(
+  
+        
+        
+ 
+ 
