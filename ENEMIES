@@ -1,0 +1,10 @@
+class Enemy:
+    def __init__(self, Name, HP,Att, End, Speed, ):
+        self.Name = Name
+        self.HP = HP
+        self.Attack = Att
+        self.End = End
+        # Put the damage Calculator here + self.Damage = Damage
+ 
+    def is_alive(self):
+        return self.HP > 0
