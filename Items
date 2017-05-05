@@ -1,4 +1,13 @@
-class Weapon(Object):
+class Items():
+	def __init__(self, name, description, value, use):
+        	self.name = description
+		self.description = description
+        	self.value = value
+		self.use = use
+
+   	def __str__(self):
+        	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value, self.use)
+class Weapon(Items):
     def __init__(self, name, description , strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,atubonus,vigbonus,conbonus):
         self.strbonus = strbonus
         self.dexbonus = dexbonus
@@ -12,9 +21,8 @@ class Weapon(Object):
         self.intreq = intreq
         self.acc = acc
         super().__init__(name, description)
- 
     def __str__(self):
-nn d  jansjdlksmxnsajdsd
+    	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
         
         
 class Dagger(Weapon):
@@ -22,8 +30,18 @@ class Dagger(Weapon):
        self.damage = damage 
        self.status = status
        self.acc = acc  
+      
+
 	   
-	   
+class WDagger(Dagger):
+	def__init__(self,name,description, dexreq, value,status, acc):
+		self.name = name
+		self.description = description
+		self.dexreq = dexreq
+		self.value = value 
+		self.status = status
+		self.acc = acc
+		
   
   
         
