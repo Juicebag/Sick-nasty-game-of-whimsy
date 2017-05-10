@@ -1,0 +1,5 @@
+Class Character(object):
+	def __init__ (status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand)
+	
+Class room(object)
+	def __init__ (code, adj, desc, items, inhab)
