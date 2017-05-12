@@ -1,0 +1,22 @@
+class combatinterface():
+	def __init__ options():
+		print("Format")
+		print("Attack")
+		print("Defend")
+		print("Run")
+		choice = input()
+		
+			if choice == "Attack":
+					print(Onhand"/"Damage" , "Spells"/"Damage", "Go Back")
+					choice2 = input()
+						if choice2 == Onhand/Damage
+							Attack function activates 
+						if choice2 == 
+			if choice == "Defend":
+					print("Reduce half damage, Are You Sure")
+			if choice == "Run":
+					print("Tried to run away")
+					run Formula
+			
+			
+ 
