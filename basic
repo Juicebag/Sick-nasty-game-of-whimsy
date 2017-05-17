@@ -14,3 +14,6 @@ Class Character(object):
 Class room(object)
 	def __init__ (code, adj, desc, items, inhab)
 
+def interpret(comm)
+	if ' ' not in comm == 1 or( 'move' not in comm == 1 '
+		return ('I don't understand that command')
