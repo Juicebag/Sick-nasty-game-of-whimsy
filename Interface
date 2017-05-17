@@ -17,6 +17,8 @@ class combatinterface():
 			if choice == "Run":
 					print("Tried to run away")
 					run Formula
-			
+			if choice == "Suicide":
+				print(Name + "fought Bravely But unable to face the challenge before them, they grabbed the noose and proceded to hang themselves on the nearest tree branch")
+				print("The Monster laughed watching"+Name+"Kill themselves they prceeded to pick up the dead body and place it in a treasure chest to mess with the next player")
 			
  
