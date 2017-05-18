@@ -1,6 +1,6 @@
 Class Character(object):
 	def __init__ (self, status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand)
-	
+		
 	def __repr__(self)
 		return (self)
 	def move (self, dest)
@@ -17,3 +17,12 @@ Class room(object)
 def interpret(comm)
 	if ' ' not in comm == 1 or( 'move' not in comm == 1 '
 		return ('I don't understand that command')
+class EnemyRoom(MapTile):
+    def __init__(self, dest, enemy):
+        self.enemy = enemy
+        super().__init__(dest)
+ 
+    def modify_player(self, Character):
+        if self.enemy.is_alive():
+            the_player.hp = the_player.hp - self.enemy.damage
+          
