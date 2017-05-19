@@ -1,3 +1,6 @@
+import random * 
+
+
 class Items():
 	def __init__(self, name, description, value, use):
         	self.name = description
@@ -30,6 +33,21 @@ class Dagger(Weapon):
        self.damage = damage 
        self.status = status
        self.acc = acc  
+       priority = dex+10
+       Damage = .45*dex - enmend 
+       accuracy = 1.0*dex*100- enmdodge
+       dodge = dex + .5*lck + 10
+       if (dex - dex)>7:
+          doublehit = True
+	  	if doublehit == True:
+			Damage = Damage*2 
+       if option == "Run          runchance = dex + end + .5*lck
+	  	if runchance > 10:
+			dest-1 
+	if crit > randit:
+		Damage = Dam
+	
+       
       
 
 	   
