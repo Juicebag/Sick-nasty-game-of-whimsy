@@ -10,7 +10,7 @@ class Items():
 
    	def __str__(self):
         	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value, self.use)
-class Weapon(Items):
+class Gear(Items):
     def __init__(self, name, description , strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,atubonus,vigbonus,conbonus):
         self.strbonus = strbonus
         self.dexbonus = dexbonus
@@ -28,7 +28,7 @@ class Weapon(Items):
     	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
         
         
-class Dagger(Weapon):
+class Dagger(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.damage = damage 
@@ -44,7 +44,7 @@ class Dagger(Weapon):
 
 
 
-class Sword(Weapon):
+class Sword(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status
@@ -57,7 +57,7 @@ class Sword(Weapon):
        self.doublechance = dex - enmdex
  
  
-class Axe(Weapon):
+class Axe(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.damage = damage 
@@ -71,7 +71,7 @@ class Axe(Weapon):
        self.doublechance = dex - enmdex  
        
        
-class Lance(Weapon):
+class Lance(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status
@@ -83,7 +83,7 @@ class Lance(Weapon):
        self.runchance = dex + end + .5*lck
        self.doublechance = dex - enmdex - 5
        
-class Scissors(Weapon):
+class Scissors(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status
@@ -94,7 +94,7 @@ class Scissors(Weapon):
        self.runchance = dex + end + .5*lck
        self.doublechance = dex - enmdex
 
-class Scythe(Weapon):
+class Scythe(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status
@@ -105,7 +105,7 @@ class Scythe(Weapon):
        self.critchance = lck + 3/5*int +10 *10
        self.runchance = dex + end + .5*lck
        self.doublechance = dex - enmdex
-class Mace(Weapon):
+class Mace(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status 
@@ -117,7 +117,7 @@ class Mace(Weapon):
        self.runchance = dex + end + .5*lck - 5
        self.doublechance = dex - enmdex -5
        
-class Bow(Weapon):
+class Bow(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status 
