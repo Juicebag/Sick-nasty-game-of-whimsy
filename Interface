@@ -1,20 +1,24 @@
 class combatinterface():
-	def __init__ options():
-		print("Format")
-		print("Attack")
-		print("Defend")
-		print("Run")
-		choice = input()
+
+	if inhib.faction == Ally:
+	if inghib.faction == Eneny: 
+	
+		def __init__ options():
+			print("Format")
+			print("Attack")
+			print("Defend")
+			print("Run")
+			choice = input()
 		
-			if choice == "Attack":
+				if choice == "Attack":
 					print(Onhand"/"Damage" , "Spells"/"Damage", "Go Back")
 					choice2 = input()
 						if choice2 == Onhand/Damage
 							Attack function activates 
 						if choice2 == 
-			if choice == "Defend":
+				if choice == "Defend":
 					print("Reduce half damage, Are You Sure")
-			if choice == "Run":
+				if choice == "Run":
 					if (dex - dex)>7:
           					doublehit = True
 	  						if doublehit == True:
