@@ -1,18 +1,42 @@
 Class Character(object):
-	def __init__ (self, status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand)
-		
+	def __init__ (self, status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, facton, desc)
+		self.status = status
+		self.stats = stats
+		self.inv = inv
+		self.pos = pos
+		self.helm = helm
+		self.chest = chest
+		self.leg = leg
+		self.gaunt = gaunt
+		self.onhand = onhand
+		self.offhand = offhand
+		self.faction = faction
+		self.desc = desc
 	def __repr__(self)
 		return (self)
 	def move (self, dest)
 		if dest in self.pos.adj:
-			return (self.pos = dest)
+			return (self.pos = dest , dest.inhab += self)	
 		else:
 			print ("you can't got to" dest "from here")
 			return (self.pos = self.pos)
+	def take (self, target)
+		if self.pos.items.contains(target):
+			return(self.inv += target)
+		else
+			return()
+	def equip (self, target)
+		if not target in inv:
+			return ()
 		
 	
-Class room(object)
-	def __init__ (code, adj, desc, items, inhab)
+Class Room(object)
+	def __init__ (self, code, adj, desc, items, inhab)
+		self.code=code
+		self.adj = adj
+		self.desc = desc
+		self.items = items
+		self.inhab = inhab
 
 def interpret(comm)
 	if ' ' not in comm == 1 or( 'move' not in comm == 1 '
