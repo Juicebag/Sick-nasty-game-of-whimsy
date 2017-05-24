@@ -1,6 +1,13 @@
 class combatinterface():
-
-	if inhib.faction == Ally:
+i = 0
+	if inhib.faction == Ally
+		for i in 10:
+			print("Talk , Leave")
+				choice = input()
+				if choice == "Talk":
+					print(description)
+		
+				
 	if inghib.faction == Eneny: 
 	
 		def __init__ options():
