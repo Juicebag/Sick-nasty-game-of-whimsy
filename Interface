@@ -8,19 +8,22 @@ i = 0
 		
 				
 	if inghib.faction == Eneny: 
-
-			print("Format")
-			print("Attacvjnvbjefsnvndwjkfnw.ds 			print("Run")
-			choice = 			if choice	
- == "Attack":
-					print(Onhand/damage, "Go Back")
-					choice2 = input()
-						if choice2 == Onhand/Damage
-							Attack function activates 
-						if choice2 == 
-				if choice == "Defend":
-					print("Reduce half damage, Are You Sure")
-				if choice == "Run":
+			print(  "["+Character.name+"]")
+			print("|____________|")
+			print("[Attack]") 			
+			print("[Run]")	
+			print("[Defend]")
+			print("{Reminder}")
+			print("{Please type one of these choice out and hit enter}")
+			choice = input()
+			
+			if choice == "Attack":
+				print("Use" Onhand/ Damage)
+				print("Use" Offhand/ Buff)
+			if choice == "Defend":
+				print("Reduce half damage")
+				print("Prepare to dodge")	
+			if choice == "Run":
 					if (dex - dex)>7:
           					doublehit = True
 	  						if doublehit == True:
@@ -37,6 +40,6 @@ i = 0
 					run Formula
 			if choice == "Suicide":
 				print(Name + "fought Bravely But unable to face the challenge before them, they grabbed the noose and proceded to hang themselves on the nearest tree branch")
-				print("The Monster laughed watching"+Name+"Kill themselves they prceeded to pick up the dead body and place it in a treasure chest to mess with the next player")
+				print("The Monster laughed watching"+Name+"Kill themselves,they neeeded	to up the dead body and place it in a treasure chest to mess with the next player")
 			
  
