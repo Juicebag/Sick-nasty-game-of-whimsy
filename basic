@@ -1,5 +1,5 @@
 Class Character(object):
-	def __init__ (self, status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, facton, desc)
+	def __init__ (self, status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, facton, desc, currency, lvl)
 		self.status = status
 		self.stats = stats
 		self.inv = inv
@@ -12,6 +12,8 @@ Class Character(object):
 		self.offhand = offhand
 		self.faction = faction
 		self.desc = desc
+		self.currency = currencey
+		self.lvl = lvl
 	def __repr__(self)
 		return (self)
 	def move (self, dest)
@@ -28,7 +30,16 @@ Class Character(object):
 	def equip (self, target)
 		if not target in inv:
 			return ()
-		
+		elif target in inv:
+			self.inv += self.(target.type) 
+			self.(target.type) = target
+	def levelup (self, stat)
+		x = self.lvl
+		if self.currency < 0.02x**3 + 3.06x**2 + 105.6x - 895:
+			print("u can't lvl up")
+			return ()
+		elif self.currency >= 0.02x**3 + 3.06x**2 + 105.6x - 895:
+			return self.stat += 1
 	
 Class Room(object)
 	def __init__ (self, code, adj, desc, items, inhab)
@@ -38,13 +49,9 @@ Class Room(object)
 		self.items = items
 		self.inhab = inhab
 
-def interpret(comm)
+###def interpret(comm)
 	if ' ' not in comm == 1 or( 'move' not in comm == 1 '
-		return ('I don't understand that command')
-class EnemyRoom(MapTile):
-    def __init__(self, dest, enemy):
-        self.enemy = enemy
-        super().__init__(dest)
+		return ('I don't understand that command')###
  
     def modify_player(self, Character):
         if self.enemy.is_alive():
