@@ -16,30 +16,34 @@ Class Character(object):
 		self.lvl = lvl
 	def __repr__(self)
 		return (self)
+		
 	def move (self, dest)
 		if dest in self.pos.adj:
 			return (self.pos = dest , dest.inhab += self)	
 		else:
 			print ("you can't got to" dest "from here")
 			return (self.pos = self.pos)
+			
 	def take (self, target)
 		if self.pos.items.contains(target):
 			return(self.inv += target)
-		else
+		else:
 			return()
+			
 	def equip (self, target)
 		if not target in inv:
 			return ()
 		elif target in inv:
 			self.inv += self.(target.type) 
 			self.(target.type) = target
+			
 	def levelup (self, stat)
 		x = self.lvl
 		if self.currency < 0.02x**3 + 3.06x**2 + 105.6x - 895:
 			print("u can't lvl up")
 			return ()
 		elif self.currency >= 0.02x**3 + 3.06x**2 + 105.6x - 895:
-			return self.stat += 1
+			return self.stats[stat] += 1
 	
 Class Room(object)
 	def __init__ (self, code, adj, desc, items, inhab)
