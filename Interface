@@ -1,4 +1,3 @@
-class combatinterface():
 i = 0
 	if inhib.faction == Ally
 		for i in 10:
@@ -9,16 +8,12 @@ i = 0
 		
 				
 	if inghib.faction == Eneny: 
-	
-		def __init__ options():
+
 			print("Format")
-			print("Attack")
-			print("Defend")
-			print("Run")
-			choice = input()
-		
-				if choice == "Attack":
-					print(Onhand"/"Damage" , "Spells"/"Damage", "Go Back")
+			print("Attacvjnvbjefsnvndwjkfnw.ds 			print("Run")
+			choice = 			if choice	
+ == "Attack":
+					print(Onhand/damage, "Go Back")
 					choice2 = input()
 						if choice2 == Onhand/Damage
 							Attack function activates 
