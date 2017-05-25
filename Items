@@ -27,9 +27,8 @@ class Gear(Items):
     def __str__(self):
     	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
         
-        
 class Dagger(Gear):
-  def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
+  def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance,type ):
        super().__init__(str, dex, end, vig, int, con,)
        self.damage = damage 
        self.statuschance = status
@@ -40,6 +39,7 @@ class Dagger(Gear):
        self.critchance = lck + 2/5*int + 10
        self.runchance = dex + end + .5*lck
        self.doublechance = dex - enmdex 
+       self.type = type 
 
 
 
@@ -84,11 +84,11 @@ class Lance(Gear):
        self.doublechance = dex - enmdex - 5
        
 class Scissors(Gear):
-  def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
+  def __init__(self,str,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
        self.statuschance = status
        self.priority = dex
-       self.damage = .30*str + .45*dex - .75*enmend 
+       self.damage = .30*str + .45*dex - .75*enmend *
        self.accuracy = 8*dex*100- enmdodge
        self.dodge = (dex + .5*lck)*2
        self.runchance = dex + end + .5*lck
