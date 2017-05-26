@@ -1,0 +1,9 @@
+class Sword():
+  def __init__(strreq, dex, vig, con, int, end):
+
+IronSword(5,0,0,0,0,2,0,2,"Basic Iron Sword... Nothing Special", 100)
+
+
+ super().__init__(strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,vigbonus,conbonus,name, description, value)
+ 
+ Sword(5,0,0,0,0,2,0,2,"Iron Sword", "Basic Iron Sword... Nothing Special", 10
