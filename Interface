@@ -8,6 +8,7 @@ i = 0
 		
 				
 	if inghib.faction == Eneny: 
+		while inhib.hp > 0:
 			print(  "["+Character.name+"]")
 			print("|____________|")
 			print("[Attack]") 			
@@ -16,28 +17,24 @@ i = 0
 			print("{Reminder}")
 			print("{Please type one of these choice out and hit enter}")
 			choice = input()
-			
 			if choice == "Attack":
 				print("Use" Onhand/ Damage)
 				print("Use" Offhand/ Buff)
+				Damage = str*.5+dex.70
+				Accuracy = dex*.7*10
+				if Accuracy >= random.randint(0, 100)
+					inhib.hp = inhib.hp - Damage 
 			if choice == "Defend":
 				print("Reduce half damage")
 				print("Prepare to dodge")	
 			if choice == "Run":
-					if (dex - dex)>7:
-          					doublehit = True
-	  						if doublehit == True:
-								Damage = Damage*2 
-       					
-	  						if runchance > 10:
-								dest-1 
-					if crit > randit:
-						Damage = Damage*2
-	
-       
-      
-					print("Tried to run away")
-					run Formula
+				print("Tried to run away")
+				ruunchance = dex*10
+	  			if runchance > 10:
+					print("You Succefully ran away")
+					pos = startingroom 
+				if crit > randit:
+					Damage = 2*Damage:
 			if choice == "Suicide":
 				print(Name + "fought Bravely But unable to face the challenge before them, they grabbed the noose and proceded to hang themselves on the nearest tree branch")
 				print("The Monster laughed watching"+Name+"Kill themselves,they neeeded	to up the dead body and place it in a treasure chest to mess with the next player")
