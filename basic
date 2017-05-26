@@ -54,10 +54,11 @@ Class Room(object)
 		self.inhab = inhab
 
 ###def interpret(comm)
-	if ' ' not in comm == 1 or( 'move' not in comm == 1 '
-		return ('I don't understand that command')###
+	#if ' ' not in comm == 1 or( 'move' not in comm == 1 '
+		#return ('I don't understand that command')###
  
-    def modify_player(self, Character):
+    def modify_player(self, enemy):
         if self.enemy.is_alive():
             the_player.hp = the_player.hp - self.enemy.damage
+	    
           
