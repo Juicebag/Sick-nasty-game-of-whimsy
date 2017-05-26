@@ -131,17 +131,8 @@ class Bow(Gear):
        
             
 
-	   
-class WDagger(Dagger):
-	def__init__(self,name,description, dexreq, value,status, acc):
-		self.name = name
-		self.description = description
-		self.dexreq = dexreq
-		self.value = value 
-		self.status = status
-		self.acc = acc
-		
-  
+
+ 
   
         
         
