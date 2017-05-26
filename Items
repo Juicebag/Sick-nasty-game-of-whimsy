@@ -34,8 +34,9 @@ class Dagger(Gear):
 
 
 class Sword(Gear):
-  def __init__(self,damage,statuschance,acc,priority,critchance, doublchance, ):
-       super().__init__(str, dex, end, vig, int, con,)
+  def __init__( ):
+      super().__init__(strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,atubonus,vigbonus,conbonus)
+      
 
  
  
