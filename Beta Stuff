@@ -1,9 +1,33 @@
 class Sword():
   def __init__(strreq, dex, vig, con, int, end):
 
-IronSword(5,0,0,0,0,2,0,2,"Basic Iron Sword... Nothing Special", 100)
+Sword(5,0,0,0,0,2,0,2,"Basic Iron Sword... Nothing Special", 100)
 
 
  super().__init__(strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,vigbonus,conbonus,name, description, value)
  
  Sword(5,0,0,0,0,2,0,2,"Iron Sword", "Basic Iron Sword... Nothing Special", 10
+ 
+ 
+ Character(LLoto, Alive,{"dexs":10,"strs":10,"cons":10,"ints":10,"ends":10,"vigs":10},[],
+ 
+ 
+ Class Character(object):
+	def __init__ (self,status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, facton, desc, currency, lvl)
+		self.status = status
+		self.stats = stats
+		self.inv = inv
+		self.pos = pos
+		self.helm = helm
+		self.chest = chest
+		self.leg = leg
+		self.gaunt = gaunt
+		self.onhand = onhand
+		self.offhand = offhand
+		self.faction = faction
+		self.desc = desc
+		self.currency = currencey
+		self.lvl = lvl
+ 
+ 
+ 
