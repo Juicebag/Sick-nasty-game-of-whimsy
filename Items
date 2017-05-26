@@ -30,104 +30,44 @@ class Gear(Items):
 class Dagger(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance,type ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.damage = damage 
-       self.statuschance = status
-       self.priority = dex+10
-       self.damage = .45*dex - enmend 
-       self.accuracy = 10*dex*100- enmdodge
-       self.dodge = dex + .5*lck + 10
-       self.critchance = lck + 2/5*int + 10
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex 
-       self.type = type 
-
 
 
 
 class Sword(Gear):
-  def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
+  def __init__(self,damage,statuschance,acc,priority,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status
-       self.priority = dex
-       self.damage = .75*str + .15*dex - enmend 
-       self.accuracy = 8*dex*100- enmdodge
-       self.dodge = dex + .5*lck 
-       self.critchance = lck + 2/5*int
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex
+
  
  
 class Axe(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.damage = damage 
-       self.statuschance = status
-       self.priority = dex
-       self.damage = .9*str+ .1*dex - .75*enmend 
-       self.accuracy = 5.5*dex*100- enmdodge
-       self.dodge = dex + .5*lck 
-       self.critchance = lck + 2/5*int + 50
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex  
+
        
        
 class Lance(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status
-       self.priority = dex -10 
-       self.damage = .75*str + .15*dex + .30*int - enmend 
-       self.accuracy = 10*dex*100 - enmdodge
-       self.dodge = dex + .5*lck -10
-       self.critchance = lck + 2/5*int -5 
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex - 5
+
        
 class Scissors(Gear):
   def __init__(self,str,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status
-       self.priority = dex
-       self.damage = .30*str + .45*dex - .75*enmend *
-       self.accuracy = 8*dex*100- enmdodge
-       self.dodge = (dex + .5*lck)*2
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex
+
 
 class Scythe(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status
-       self.priority = dex
-       self.damage = .20*str + .10*dex - .75enmend 
-       self.accuracy = 11*dex*100 - enmdodge
-       self.dodge = dex + .5*lck + 20 
-       self.critchance = lck + 3/5*int +10 *10
-       self.runchance = dex + end + .5*lck
-       self.doublechance = dex - enmdex
+
 class Mace(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status 
-       self.priority = dex
-       self.damage = .70*str + .5*enmend 
-       self.accuracy = 7*dex*100 - enmdodge
-       self.dodge = dex + .5*lck - 5
-       self.critchance = lck + 1/5*int
-       self.runchance = dex + end + .5*lck - 5
-       self.doublechance = dex - enmdex -5
+
        
 class Bow(Gear):
   def __init__(self,damage,statuschance,acc,priority,dodge,runchance,critchance, doublchance, ):
        super().__init__(str, dex, end, vig, int, con,)
-       self.statuschance = status 
-       self.priority = dex
-       self.damage = .60*dex + .40*int 3/4*enmend 
-       self.accuracy = 9*dex*100 - 2*enmdodge
-       self.dodge = dex + .5*lck - 10
-       self.critchance = lck + 2/5*int
-       self.runchance = dex + end + .5*lck - 10
-       self.doublechance = dex - enmdex - 15
+
        
             
 
