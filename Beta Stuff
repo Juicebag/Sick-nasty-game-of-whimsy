@@ -1,19 +1,21 @@
 class Sword():
-  def __init__(strreq, dex, vig, con, int, end):
+  def __init__(strreq, dex, vig, con, int, end, desc, value):
 
 Sword(5,0,0,0,0,2,0,2,"Basic Iron Sword... Nothing Special", 100)
+Axe(8,0,0,0,0,4,0,4,"Basic Iron Axe... Nothing Special", 100)
 
 
  super().__init__(strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,vigbonus,conbonus,name, description, value)
  
- Sword(5,0,0,0,0,2,0,2,"Iron Sword", "Basic Iron Sword... Nothing Special", 10
+ Sword(5,0,0,0,0,2,0,2,"Iron Sword", "Basic Iron Sword... Nothing Special", 100)
+ Axe(8,0,0,0,0,4,0,4,"Basic Iron Axe... Nothing Special", 100)
  
  
- Character(LLoto, Alive,{"dexs":10,"strs":10,"cons":10,"ints":10,"ends":10,"vigs":10},[],
- 
+ Character(Loto, Alive,{"dexs":10,"strs":10,"cons":10,"ints":10,"ends":10,"vigs":10},[],0,"Leather helm","Leather chest","Leather Legs", Leather Gauntlet","Iron Sword","Nothing","Ally","The Hero",50,1)
+ Character(Ogre, Alive,{"dexs":10,"strs":10,"cons":10,"ints":10,"ends":10,"vigs":10},[],0,"Leather helm","Leather chest","Leather Legs", Leather Gauntlet","Iron Axe","Nothing","Inhab","The Hero",50,1) 
  
  Class Character(object):
-	def __init__ (self,status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, facton, desc, currency, lvl)
+	def __init__ (self,status, stats, inv, pos, helm, chest, leg, gaunt, onhand, offhand, faction, desc, currency, lvl)
 		self.status = status
 		self.stats = stats
 		self.inv = inv
