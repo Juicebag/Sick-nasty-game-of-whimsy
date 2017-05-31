@@ -1,5 +1,48 @@
 class Sword():
   def __init__(strreq, dex, vig, con, int, end, desc, value):
+  class Gear(Items):
+    def __init__(self, name, description , strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,atubonus,vigbonus,conbonus,acc):
+        self.strbonus = strbonus
+        self.dexbonus = dexbonus
+        self.intbonus = intbonus
+        self.endbonus = endbonus
+        self.atubonus = atubonus
+        self.vigbonus = vigbonus
+        self.conbonus = conbonus
+        self.strreq = strreq
+        self.dexreq = dexreq
+        self.intreq = intreq
+        self.acc = acc
+        super().__init__(name, description)
+    def __str__(self):
+    	return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+class Armor(Gear):
+	def __init__(self, name, description , strreq, dexreq, intreq,strbonus,dexbonus,intbonus,endbonus,atubonus,vigbonus,conbonus):
+		self.strbonus = strbonus
+		self.dexbonus = dexbonus
+		self.intbonus = intbonus
+		self.endbonus = endbonus
+		self.atubonus = atubonus
+		self.vigbonus = vigbonus
+		self.conbonus = conbonus
+		self.strreq = strreq
+		self.dexreq = dexreq
+		self.intreq = intreq	
+	def __str__(self):
+    		return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+	
+class Helmet(Armor):
+	def __init__(strreq,dexreq, intreq, dex, vig, con, int, end, desc, value):
+Helmet(0,0,0,0,0,2,0,5,"LeatherHelmet",50)
+class Chest(Armor):
+	def __init__(strreq,dexreq, intreq, dex, vig, con, int, end, desc, value):
+Chest(0,0,0,0,0,2,0,5,"Leather Chest",50)
+class Gauntlet(Armor):
+	def __init__(strreq,dexreq, intreq, dex, vig, con, int, end, desc, value):
+Gauntlet(0,0,0,0,0,2,0,5,"Leather Gauntlet",50)
+class Legs(Armor):
+	def __init__(strreq,dexreq, intreq, dex, vig, con, int, end, desc, value):
+Legs(0,0,0,0,0,2,0,5,"Leather Legs",50)
 
 Sword(5,0,0,0,0,2,0,2,"Basic Iron Sword... Nothing Special", 100)
 Axe(8,0,0,0,0,4,0,4,"Basic Iron Axe... Nothing Special", 100)
