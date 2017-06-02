@@ -74,5 +74,14 @@ Axe(8,0,0,0,0,4,0,4,"Basic Iron Axe... Nothing Special", 100)
 		self.currency = currencey
 		self.lvl = lvl
  
- 
+ Class Room(object)
+	def __init__ (self, code, adj, desc, items, inhab)
+		self.code=code
+		self.adj = adj
+		self.desc = desc
+		self.items = items
+		self.inhab = inhab
+		
+startingroom = Room(1,miniroom ,"You awoke here","None",0)
+miniroom = Room(2,startingroom, "There is an enemy","None",ogre)
  
