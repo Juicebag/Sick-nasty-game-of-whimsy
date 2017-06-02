@@ -8,3 +8,10 @@ class Enemy:
  
     def is_alive(self):
         return self.HP > 0
+
+Enemy("Ogre", 40, 15, 10,5):
+Enemy("Goblin",15,10,10,5):
+Enemy("Raider",20,20,5,20):
+
+
+    
